@@ -6,8 +6,9 @@ const nextConfig = {
   images: { 
     unoptimized: true 
   },
-  // Remove output: 'export' for Vercel deployment
-  // Vercel handles the build process automatically
+  output: 'export',
+  trailingSlash: true,
+  distDir: 'out'
 };
 
 module.exports = nextConfig;
